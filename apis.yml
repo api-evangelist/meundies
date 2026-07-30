@@ -1,7 +1,25 @@
 aid: meundies
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/meundies.png
 name: MeUndies
-description: MeUndies is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'MeUndies is a direct-to-consumer apparel brand based in Los Angeles, selling
+  underwear, loungewear, socks, and basics online through a subscription membership and
+  one-time purchase model. It operates as an e-commerce retailer at meundies.com rather
+  than a developer platform: an enrichment pass on 2026-07-20 probed the domain and found
+  no public API surface (api.meundies.com and developer.meundies.com both return 404, and
+  no /.well-known/, /llms.txt, or OpenAPI documents were discoverable). This profile was
+  surfaced as a 500 Global portfolio company and carries the domain-security probe result;
+  it will gain API artifacts only if MeUndies publishes a developer program.'
 url: https://raw.githubusercontent.com/api-evangelist/meundies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- E-Commerce
+- Retail
+- Apparel
+- Direct-to-Consumer
+- Subscription
+- Consumer Products
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/meundies-domain-security.yml
 - type: Website
   url: https://meundies.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
