@@ -32,6 +32,9 @@ description: 'MeUndies is a direct-to-consumer apparel brand based in Los Angele
   surfaced as a 500 Global portfolio company and carries the domain-security probe result;
   it will gain API artifacts only if MeUndies publishes a developer program.'
 url: https://raw.githubusercontent.com/api-evangelist/meundies/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "It operates as an e-commerce retailer at meundies.com rather than a developer platform: an enrichment pass on 2026-07-20 probed the domain and found no public API surface (api.meundies.com and develop"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
